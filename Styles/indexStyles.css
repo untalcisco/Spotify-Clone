@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap');
+:root {
+  --pure-black: #000000;
+  --soft-black: #191414;
+  --spoti-green: #1DB954;
+  --pure-white: #ffffff;
+  --alternative-green: #1ed760;
+  --soft-grey: #919496;
+  --main-font: 'Zen Koku Gothic New', sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+    font-size: 62.5%;
+    min-width: 327px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--pure-black);
+  height: 54px;
+  align-items: center;
+}
+header img{
+  width: 120px;
+}
+nav .icon {
+  width: 30px;
+  margin-right: 20px;
+}
+main .intro {
+  height: 100vh;
+  background-color: #2941ab;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .intro h2{
+  color: var(--alternative-green);
+  font-size: 5rem;
+  text-align: center;
+  font-family: var(--main-font);
+  font-weight: 900;
+}
+main .intro p{
+  color: var(--alternative-green);
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+main .intro a{
+  margin-top: 30px;
+  background-color: var(--spoti-green);
+  text-decoration: none;
+  color: #2941ab;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 40px;
+  font-size: 1.5rem;
+}
+main .about{
+  background-color: var(--pure-black);
+}
+main .about img{
+  width: 130px;
+  padding-top: 20px;
+}
+main .about .company {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px 20px;
+}
+
+main .about .comunnities{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px 20px;
+}
+main .about .links{ 
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px 20px;
+}
+main .about .company a{
+  text-decoration: none;
+  color: var(--pure-white);
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+main .about .comunnities a{
+  text-decoration: none;
+  color: var(--pure-white);
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+main .about .links a{
+  text-decoration: none;
+  color: var(--pure-white);
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+main .about .company a:hover{
+  color: var(--spoti-green);
+}
+main .about .comunnities a:hover{
+  color: var(--spoti-green);
+}
+main .about .links a:hover{
+  color:var(--spoti-green)
+}
+main .about .company,.comunnities,.links> p{
+  color: var(--soft-grey);
+  font-family: var(--main-font);
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+main .about .socialmedia{
+  margin-left: 20px;
+}
+main .about .socialmedia img{
+  width: 50px;
+}
+footer{
+  background-color: var(--pure-black);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer .left{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0 30px 0;
+}
+footer .left a{
+  text-decoration: none;
+  color: var(--soft-grey);
+  margin: 20px 0 0 20px;
+  font-size: 1rem;
+}
+footer .right {
+  color: var(--pure-white);
+  display: flex;
+  align-items: flex-end;
+  margin: 20px 20px 0 0;
+  flex-direction: column;
+  padding: 30px 0 30px 0;
+}
+footer .right a{
+  text-decoration: none;
+  color: var(--soft-grey);
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 480px){ 
+  main .intro h2{ 
+    font-size: 7rem;
+  }
+  main .intro p{
+    font-size: 2rem;
+  }
+  main .intro a{
+    font-size: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  main .about .company,.comunnities,.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+}
